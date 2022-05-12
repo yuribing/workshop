@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Crimson", sans-serif;
+    margin: 0;
+}
+.pre-container{
+    background-image: url("https://blog.hubspot.com/hubfs/00-Blog_Thinkstock_Images/learning-to-code.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+a{
+    color: #a84c0e;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-shadow: 1px 1px #fff;
+}
+.container{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+}
+nav{
+    padding: 1rem 0;
+}
+.pre-nav{
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color:#68b43d;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.logo-text{
+    font-weight: bold;
+    font-size: 1rem;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+nav li{
+    flex: 1 auto;
+}
+nav li a{
+    background-color:#a84c0e;
+    display:block;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+nav a.active {
+    background-color:ghostwhite;
+    color: rgb(194, 87, 87);
+    font-weight: bold;
+}
+nav a.highlight{
+    background-color: #a84c0e;
+    color: rgb(194, 87, 87);
+}
+nav a:hover{
+    opacity: 0.8;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;   
+}
+.content .fontHs {
+    background-color:rgba(245, 247, 229, 0.596);
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+.content .hbig {
+    letter-spacing: 2px; 
+    color: rgb(49, 48, 5);
+    font-size: 2rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px #fff;
+}
+.content .hsmall {
+    color: rgb(21, 33, 36);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.note {
+    color: rgb(21, 33, 36);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.white-link{
+    background-color:#eaf8ac60;
+    color: #110202;
+    padding: 1rem;
+}
+.teal-link{
+    background-color:#b80b83;
+    color:#054605;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width:768px) {
+    .pre-nav{
+        font-size: 0.5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+    }
+
+    .content{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+}
